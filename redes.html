@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes • JIRAYA HUB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">JIRAYA HUB</h1>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a class="active" href="redes.html">Redes</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero small">
+        <h2>Minhas Redes</h2>
+        <p>Conecte-se comigo em todas as plataformas</p>
+    </header>
+
+    <main>
+        <!-- CARD YOUTUBE -->
+        <div class="card social-card" onclick="window.open('https://www.youtube.com/@jiraya8092', '_blank')">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" class="icon">
+            <h2>YouTube</h2>
+            <button class="btn-red">Ir para o Canal</button>
+        </div>
+
+        <!-- CARD DISCORD -->
+        <div class="card social-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" class="icon">
+            <h2>Discord</h2>
+            <button class="btn-purple" onclick="copiarDiscord()">Copiar Nick & Abrir Discord</button>
+        </div>
+    </main>
+
+    <footer>
+        © 2025 JIRAYA • Todos os direitos reservados
+    </footer>
+
+<script>
+function copiarDiscord() {
+    navigator.clipboard.writeText("@jiraya113");
+    window.open("https://discord.com/app", "_blank");
+}
+</script>
+
+</body>
+</html>
